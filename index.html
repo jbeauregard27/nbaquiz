@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Do You Know Ball?</h1>
+        <h3>Answers are case sensitive and require the full player name</h3>
+        <div id="question-container">
+            <textarea id="question" class="questionbox"></textarea>
+        </div>
+        <div id="answer">
+            <textarea id=answer-box placeholder="Enter your answer here" class="answerbox"></textarea>
+        </div>
+        <button id='submitbtn' class="submitbtn">Submit Answer</button>
+        <textarea id="question-counter-area" class="question-counter" readonly>1</textarea>
+    </div>
+    </div>
+    <div id="incorrect-popup" class="popup wronganswer">
+        <button id="closewrongbtn" class="closewrongbtn">X</button>
+        <div id="wronganswer">
+            <p>Incorrect Answer! Try again.</p>
+        </div>
+    </div>
+
+    <div id="finished-popup" class="popup finishedquiz">
+        <div id="finishedquiz">
+            <p>You've finished the quiz! Great Job! Refresh the page to go again!</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+html {
+    display: flex;
+    justify-content: center;
+    background-image: url('https://cdn.pixabay.com/photo/2022/02/18/14/15/basketball-background-7020782_1280.png')
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: slateblue;
+    height: 100vh;
+    width: 100vh;
+    border: 4px solid black;
+}
+
+button {
+    width: 300px;
+    height: 150px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+textarea {
+    display: flex;
+    margin-top: 50px;
+    width: 600px;
+    height: 150px;
+    font-size: 50px;
+}
+
+.questionbox {
+    border: 6px solid yellow;
+    box-shadow: 5px 8px;
+    border-radius: 16px;
+    width: 800px;
+}
+
+.answerbox {
+    border: 6px solid greenyellow;
+    box-shadow: 5px 8px;
+    border-radius: 16px;
+}
+
+.submitbtn {
+    border: 6px solid purple;
+    box-shadow: 5px 8px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.wronganswer {
+    font-size: 50px;
+    border: 6px solid red;
+    box-shadow: 5px 8px;
+    border-radius: 16px;
+    background-color: white;
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    transition: transform 0.4s top 0.4s
+}
+
+.finishedquiz {
+    font-size: 50px;
+    border: 6px solid green;
+    box-shadow: 5px 8px;
+    border-radius: 16px;
+    background-color: white;
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    transition: transform 0.4s top 0.4s
+}
+
+.closewrongbtn {
+    border: 2px solid orangered;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: white;
+}
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close-finished-button {
+    border: 2px solid yellowgreen;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.question-counter {
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: 5px 8px;
+}
+
+h1 {
+    font-size: 60px;
+}
